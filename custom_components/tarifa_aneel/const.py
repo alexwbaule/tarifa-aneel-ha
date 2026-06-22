@@ -1,0 +1,5 @@
+DOMAIN = "tarifa_aneel"
+CONF_DISTRIBUIDORA = "distribuidora"
+CONF_SUBCLASSE = "subclasse"
+CONF_ICMS = "icms"
+CONF_PIS = "pis_cofins"

@@ -1,0 +1,11 @@
+{
+  "domain": "tarifa_aneel",
+  "name": "Tarifa de Energia ANEEL",
+  "config_flow": true,
+  "documentation": "https://github.com/alexwbaule/tarifa_aneel",
+  "dependencies": [],
+  "codeowners": ["@alexwbaule"],
+  "requirements": ["python-dateutil"],
+  "version": "1.0.0",
+  "iot_class": "cloud_polling"
+}
