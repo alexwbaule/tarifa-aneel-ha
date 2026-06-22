@@ -1,10 +1,8 @@
 import logging
 from datetime import date, timedelta
-import aiohttp
 from dateutil.relativedelta import relativedelta
 
 from homeassistant.components.sensor import SensorEntity, SensorStateClass
-from homeassistant.const import CURRENCY_REAL
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 from .const import DOMAIN, CONF_DISTRIBUIDORA, CONF_SUBCLASSE, CONF_ICMS, CONF_PIS
@@ -33,7 +31,8 @@ class TarifaAneelSensor(SensorEntity):
         
         self._attr_name = f"Custo kWh {distribuidora}"
         self._attr_unique_id = f"aneel_kwh_{distribuidora.lower().replace(' ', '_')}"
-        self._attr_native_unit_of_measurement = f"{CURRENCY_REAL}/kWh"
+        # CORREÇÃO: Usando a string direta em vez da constante inexistente
+        self._attr_native_unit_of_measurement = "R$/kWh"
         self._attr_state_class = SensorStateClass.MEASUREMENT
         self._attr_icon = "mdi:flash"
         
