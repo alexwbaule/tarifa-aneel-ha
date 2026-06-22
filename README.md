@@ -8,7 +8,7 @@ Ideal para calcular o custo de recarga de Veículos Elétricos ou o gasto do seu
 
 1. Abra o HACS no seu Home Assistant.
 2. Clique nos 3 pontos no canto superior direito e selecione **Repositórios Personalizados (Custom repositories)**.
-3. Cole a URL deste repositório: `https://github.com/seu-usuario/seu-repositorio`
+3. Cole a URL deste repositório: `https://github.com/alexwbaule/tarifa-aneel-ha`
 4. Na categoria, escolha **Integração (Integration)** e clique em Adicionar.
 5. Feche a janela, pesquise por "Tarifa ANEEL" no HACS e clique em **Download**.
 6. Reinicie o Home Assistant.
